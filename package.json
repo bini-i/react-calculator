@@ -16,7 +16,6 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
     "big.js": "^6.1.1",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",

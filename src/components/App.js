@@ -5,15 +5,6 @@ import ButtonPanel from "./ButtonPanel";
 // eslint-disable-next-line no-unused-vars
 import calculate from "../logic/calculate";
 
-// function App() {
-//   return (
-//     <>
-//       <Display />
-//       <ButtonPanel />
-//     </>
-//   );
-// }
-
 class App extends Component {
   constructor() {
     super();
@@ -28,23 +19,28 @@ class App extends Component {
   }
 
   handleClick(buttonName) {
-    const { totalState, nextState } = this.state;
-    const { total, next } = calculate(
-      { total: totalState, next: nextState },
+    const {
+      total: totalState,
+      next: nextState,
+      operation: operationState
+    } = this.state;
+    const { total, next, operation } = calculate(
+      { total: totalState, next: nextState, operation: operationState },
       buttonName
     );
     this.setState({
       total,
-      next
+      next,
+      operation
     });
   }
 
   render() {
-    const { total } = this.state;
+    const { next, total } = this.state;
     return (
       <>
-        <Display total={total} />
-        <ButtonPanel onClick={this.handleClick} />
+        <Display next={String(next)} total={String(total)} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }

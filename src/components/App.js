@@ -36,10 +36,10 @@ class App extends Component {
   }
 
   render() {
-    const { next, total } = this.state;
+    const { next } = this.state;
     return (
       <>
-        <Display next={String(next)} total={String(total)} />
+        <Display next={next || 0} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );

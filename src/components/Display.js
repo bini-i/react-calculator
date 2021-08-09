@@ -1,18 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Display({ next, total }) {
-  return <span>{`${next}     ${total}`}</span>;
+function Display({ next }) {
+  return <span>{String(next)}</span>;
 }
 
 export default Display;
 
 Display.propTypes = {
-  next: PropTypes.string,
-  total: PropTypes.string
+  next: PropTypes.number
 };
 
 Display.defaultProps = {
-  total: "0",
-  next: ""
+  next: 0
 };

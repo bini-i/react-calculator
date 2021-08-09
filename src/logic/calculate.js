@@ -5,8 +5,10 @@ function calculate(calculator, btnName) {
   if (btnName === "AC") {
     total = null;
     next = null;
+    operation = null;
   } else if (btnName === "+/-") {
-    total = operate(total, next, "-");
+    total = operate(total || 0, -1, "x");
+    next = operate(next || 0, -1, "x");
   } else if (
     btnName === "+" ||
     btnName === "-" ||
@@ -16,33 +18,20 @@ function calculate(calculator, btnName) {
   ) {
     operation = btnName;
   } else if (btnName === "=") {
-    total = operate(total, next, "+");
-  } else if (!operation) {
-    next = next * 10 + parseInt(btnName, 10);
+    total = operate(total, next, operation);
+    operation = null;
+    next = total;
   } else {
-    total = operate(next, parseInt(btnName, 10), operation);
+    if (operation && next) {
+      if (!total) {
+        total = next;
+        next = null;
+      }
+    }
+    next = next * 10 + parseInt(btnName, 10);
   }
 
   return { total, next, operation };
 }
 
 export default calculate;
-
-// 5 + 2
-
-// total = null
-// next = null
-// operation = null
-
-// 5
-// total = null
-// next = 5
-// operation = null
-
-// +
-// total = null
-// next = 5
-// operation = +
-
-// 2
-// total = null

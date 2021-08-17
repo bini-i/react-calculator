@@ -5,9 +5,7 @@ function operate(numberOne, numberTwo, operation) {
   const num2 = Big(numberTwo);
   let result = 0;
   if (operation === "+") {
-    console.log(`num1 = ${num1} num2 = ${num2}`);
     result = num1.plus(num2);
-    console.log(result);
   }
   if (operation === "-") {
     result = num1.minus(num2);

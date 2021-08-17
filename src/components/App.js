@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Display from "./Display";
 import "../App.css";
 import ButtonPanel from "./ButtonPanel";
-// eslint-disable-next-line no-unused-vars
 import calculate from "../logic/calculate";
+// import * as styles from "./App.module.css";
 
 const App = () => {
   const [total, setTotal] = useState(null);

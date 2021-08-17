@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import * as styles from "./Display.module.css";
 
 function Display({ next }) {
-  return <span>{String(next)}</span>;
+  return <span className={styles.display}>{String(next)}</span>;
 }
 
 export default Display;

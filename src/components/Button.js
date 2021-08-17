@@ -7,7 +7,10 @@ function Button({ name, color, wide, clickHandler }) {
     <button
       onClick={clickHandler.bind(null, name)}
       type="button"
-      style={{ backgroundColor: color, width: wide ? "50%" : "25%" }}
+      style={{
+        backgroundColor: color,
+        width: JSON.parse(wide) ? "50%" : "25%"
+      }}
       className={styles.button}
     >
       {name}
@@ -26,5 +29,5 @@ Button.propTypes = {
 
 Button.defaultProps = {
   color: "#E0E0E0",
-  wide: false
+  wide: "false"
 };

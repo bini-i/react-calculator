@@ -3,7 +3,6 @@ import Display from "./Display";
 import "../App.css";
 import ButtonPanel from "./ButtonPanel";
 import calculate from "../logic/calculate";
-// import * as styles from "./App.module.css";
 
 const App = () => {
   const [total, setTotal] = useState(null);

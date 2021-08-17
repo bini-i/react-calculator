@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -24,4 +25,15 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+li {
+  border-bottom: solid steelblue 3px;
+  margin: 0 10px;
+  color: steelblue;
+}
+
+a {
+  border-right: solid black 3px;
+  text-decoration: none;
 }

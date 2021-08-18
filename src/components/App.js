@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <>
-      <Display next={next || 0} />
+      <Display next={next ? String(next) : "0"} />
       <ButtonPanel clickHandler={handleClick} />
     </>
   );

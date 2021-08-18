@@ -12,7 +12,6 @@ function operate(numberOne, numberTwo, operation) {
   }
   if (operation === "x") {
     result = num1.times(num2);
-    window.result = result;
   }
   if (operation === "÷") {
     if (numberTwo === 0) return "Error: Division by zero";
@@ -21,7 +20,6 @@ function operate(numberOne, numberTwo, operation) {
   if (operation === "%") {
     result = num1.mod(num2);
   }
-
   return result.toNumber();
 }
 

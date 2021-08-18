@@ -1,10 +1,10 @@
 .button {
-    height: 100px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px #b7b2b2;
-    font-weight: bold;
-    font-size: 1.25rem;
+  height: 100px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #b7b2b2;
+  font-weight: bold;
+  font-size: 1.25rem;
 }

@@ -11,6 +11,9 @@ This project uses react components to build a calculator.
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Live Demo](#live-demo)
+* [Prerequisite](#prerequisite)
+* [How to use](#how-to-use)
+* [How to run tests](#how-to-run-tests)
 * [Authors](#authors)
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
@@ -24,9 +27,26 @@ This project uses react components to build a calculator.
 ## Live Demo
 
 [Live Demo Link](https://react-calculator9.herokuapp.com/)
+## Prerequisite
 
+- [Node](https://nodejs.org/)
+
+## How to use
+### Locally
+
+- Open a command line and navigate to a directory you want to locally host the project.
+- Run ```git clone git@github.com:bini-i/TodoList.git``` to clone the project to your computer.
+- Run ```npm install``` to install all dependencies.
+- Run ```npm start``` to locally start and serve the react application.
+- Navigate to ```localhost:3000``` in your browser to open the applcation.
+
+## How to run tests
+- Open a command line
+- Run ``` npm install``` to install all dependencies needed for testing.
+- Exectue ```npm test``` to run the tests
 
 ## Authors
+
 
 👤 **Binyam Hailemeskel**
 
